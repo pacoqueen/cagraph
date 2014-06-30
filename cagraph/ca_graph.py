@@ -121,7 +121,7 @@ class CaGraph(gtk.DrawingArea, CaGraphFile):
         for axis in self.axiss:
             diff = (axis.max - axis.min) / 10.0
 
-            if event.direction == gtk.gdk.ScrollDirection(gtk.gdk.SCROLL_DOWN):
+            if event.direction == gtk.gdk.ScrollDirection(gtk.gdk.SCROLL_UP):
                 diff *= -1
 
             axis.min = axis.min - diff
